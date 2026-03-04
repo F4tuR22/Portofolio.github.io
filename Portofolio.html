@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Fatur Rahman Impung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a; /* bg-slate-900 */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #3b82f6); /* cyan-400 to blue-500 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased leading-relaxed selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <span class="text-2xl font-bold text-white tracking-tight">Fatur<span class="text-cyan-500">.</span></span>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                    <a href="#tentang" class="hover:text-cyan-400 transition-colors">Tentang Saya</a>
+                    <a href="#proyek" class="hover:text-cyan-400 transition-colors">Proyek</a>
+                    <a href="#pengalaman" class="hover:text-cyan-400 transition-colors">Pengalaman</a>
+                    <a href="#keahlian" class="hover:text-cyan-400 transition-colors">Keahlian</a>
+                </div>
+                <!-- Mobile menu button (optional) -->
+                <div class="md:hidden text-slate-300 text-xl">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto min-h-[90vh] flex items-center">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-12 w-full">
+            
+            <!-- Hero Text (Kiri) -->
+            <div class="lg:w-3/5 text-center lg:text-left flex flex-col justify-center">
+                <div class="inline-block px-4 py-2 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-sm font-semibold mb-6 max-w-max mx-auto lg:mx-0">
+                    <i class="fas fa-code mr-2"></i> Mahasiswa Sistem Informasi
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                    Halo, Saya <br/> <span class="gradient-text">Fatur Rahman Impung</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed mx-auto lg:mx-0">
+                    Sangat antusias dengan teknologi, analisis sistem, dan bagaimana solusi digital dapat memecahkan masalah di dunia nyata. Mari membangun masa depan digital yang lebih baik.
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="mailto:impungfaturrahman@gmail.com" class="bg-cyan-600 hover:bg-cyan-500 text-white px-8 py-3.5 rounded-full font-medium transition-all shadow-lg shadow-cyan-900/50 flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Hubungi Saya
+                    </a>
+                    <a href="https://www.linkedin.com/in/faturimpung" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 hover:border-slate-600 px-8 py-3.5 rounded-full font-medium transition-all flex items-center gap-2">
+                        <i class="fab fa-linkedin text-cyan-400"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image (Kanan) -->
+            <div class="lg:w-2/5 flex justify-center lg:justify-end mt-12 lg:mt-0">
+                <!-- Ukuran diperkecil: lg:w-72 lg:h-72 (sekitar 288px) -->
+                <div class="relative w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72">
+                    <!-- Efek cahaya di belakang foto -->
+                    <div class="absolute inset-0 bg-cyan-500 blur-[50px] opacity-20 rounded-full"></div>
+                    
+                    <!-- Bingkai Foto -->
+                    <div class="relative w-full h-full p-2 rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-700 border border-slate-700 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+
+                        <!-- 
+                       <img src="Foto Fatur.png" alt="Fatur Rahman Impung" class="w-full h-full object-cover rounded-[1.25rem]"> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="py-24 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 flex items-center gap-3">
+                        <i class="fas fa-user-astronaut text-cyan-500"></i> Tentang Saya
+                    </h2>
+                    <div class="space-y-4 text-slate-400 text-justify text-lg leading-relaxed">
+                        <p>
+                            Saya adalah mahasiswa Sistem Informasi dengan fokus pada pemahaman cara kerja aplikasi, alur data, dan solusi digital. Saya sangat menikmati proses mengeksplorasi <i>tools</i> dan teknologi baru, serta membangun proyek-proyek sederhana untuk memperdalam pemahaman praktis saya.
+                        </p>
+                        <p>
+                            Selain bidang teknis, saya juga aktif dalam kegiatan kampus dan organisasi. Pengalaman ini membantu saya mengasah pemikiran analitis, kemampuan komunikasi, dan kerja sama tim agar selalu siap beradaptasi di lingkungan yang serba digital.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Kotak Pendidikan -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-700 shadow-xl relative overflow-hidden">
+                    <!-- Ornamen -->
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-bl-full"></div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center">
+                        <i class="fas fa-graduation-cap text-cyan-500 mr-3"></i> Latar Pendidikan
+                    </h3>
+                    
+                    <div class="mb-8 relative pl-6 border-l-2 border-slate-700">
+                        <div class="absolute w-4 h-4 bg-slate-900 border-2 border-cyan-500 rounded-full -left-[9px] top-1"></div>
+                        <h4 class="text-lg font-bold text-white">Universitas Katolik Indonesia Atma Jaya</h4>
+                        <p class="text-sm text-cyan-400 font-medium mb-2">S1 Sistem Informasi • Agt 2023 - Sekarang</p>
+                        <div class="inline-block bg-slate-800 px-3 py-1 rounded-md border border-slate-700">
+                            <p class="text-sm text-slate-300 font-semibold">IPK: <span class="text-white">3.56</span> / 4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-6 border-l-2 border-slate-700">
+                        <div class="absolute w-4 h-4 bg-slate-900 border-2 border-cyan-500 rounded-full -left-[9px] top-1"></div>
+                        <h4 class="text-lg font-bold text-white">SMAN 1 Long Hubung</h4>
+                        <p class="text-sm text-cyan-400 font-medium mb-2">Ilmu Pengetahuan Sosial • Jul 2020 - Jun 2023</p>
+                        <div class="inline-block bg-slate-800 px-3 py-1 rounded-md border border-slate-700">
+                            <p class="text-sm text-slate-300 font-semibold">Nilai Akhir: <span class="text-white">85.80%</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Portofolio -->
+    <section id="proyek" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    <i class="fas fa-laptop-code text-cyan-500 mr-2"></i> Proyek Pilihan
+                </h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Implementasi langsung dari pembelajaran dan analisis sistem ke dalam bentuk aplikasi yang fungsional.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Proyek 1 -->
+                <div class="bg-slate-800 rounded-3xl border border-slate-700 p-8 card-hover transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-bl-full transition-transform group-hover:scale-125"></div>
+                    
+                    <div class="flex justify-between items-start mb-6 relative z-10">
+                        <div>
+                            <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Aplikasi Web</span>
+                            <h3 class="text-2xl font-bold text-white mt-2">Hunion</h3>
+                            <p class="text-sm text-slate-400 mt-1">Sistem Manajemen Hunian</p>
+                        </div>
+                        <span class="text-xs font-bold text-slate-300 bg-slate-700/50 px-3 py-1.5 rounded-full border border-slate-600">Jun - Jul 2025</span>
+                    </div>
+                    
+                    <p class="text-slate-300 mb-6 leading-relaxed flex-grow">
+                        Aplikasi web komprehensif untuk mengelola hunian (apartemen, kos, perumahan). Saya memimpin proyek ini sebagai <strong>Lead Developer & System Designer</strong>.
+                    </p>
+                    
+                    <ul class="text-sm text-slate-400 mb-8 space-y-3">
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Pengembangan full-stack menggunakan JS, EJS, Node.js, & MongoDB.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Integrasi Gemini API sebagai chatbot pintar khusus hunian.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Desain skema database & pemodelan sistem (UML/Activity Diagram).</li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-700">
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">Node.js</span>
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">MongoDB</span>
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">Gemini API</span>
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">UML</span>
+                    </div>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="bg-slate-800 rounded-3xl border border-slate-700 p-8 card-hover transition-all duration-300 flex flex-col h-full relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-bl-full transition-transform group-hover:scale-125"></div>
+
+                    <div class="flex justify-between items-start mb-6 relative z-10">
+                        <div>
+                            <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Aplikasi Mobile</span>
+                            <h3 class="text-2xl font-bold text-white mt-2">Bilingo</h3>
+                            <p class="text-sm text-slate-400 mt-1">Kloning Aplikasi Duolingo</p>
+                        </div>
+                        <span class="text-xs font-bold text-slate-300 bg-slate-700/50 px-3 py-1.5 rounded-full border border-slate-600">Okt - Nov 2025</span>
+                    </div>
+                    
+                    <p class="text-slate-300 mb-6 leading-relaxed flex-grow">
+                        Proyek pengembangan aplikasi mobile meniru fitur Duolingo untuk memperdalam Mobile Programming. Berperan sebagai <strong>Fullstack Developer & UI/UX Designer</strong> (Nilai: A-).
+                    </p>
+                    
+                    <ul class="text-sm text-slate-400 mb-8 space-y-3">
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Implementasi Intent, Bundle, Fragments, Threading, & Toast.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Membangun sistem otentikasi (Login) yang aman.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-cyan-500 mt-1 mr-3"></i> Penggunaan database sementara (Singleton).</li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-700 mt-auto">
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">Mobile Dev</span>
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">UI/UX</span>
+                        <span class="text-xs font-semibold bg-slate-900 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg">Java/Kotlin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="py-24 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center">
+                <i class="fas fa-briefcase text-cyan-500 mr-2"></i> Pengalaman & Organisasi
+            </h2>
+
+            <div class="relative border-l-2 border-slate-700 ml-4 md:ml-0 md:pl-0 space-y-12">
+                
+                <!-- Organisasi -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="absolute w-5 h-5 bg-slate-900 border-4 border-cyan-500 rounded-full -left-[11px] md:left-1/2 md:-ml-[10px] top-1"></div>
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:text-right md:pr-12">
+                            <span class="inline-block bg-slate-800 text-cyan-400 border border-slate-700 px-4 py-1.5 rounded-full text-sm font-bold">Feb 2025 - Nov 2025</span>
+                        </div>
+                        <div class="hidden md:block md:w-2/12"></div>
+                        <div class="md:w-5/12 bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-lg hover:border-cyan-500/50 transition-colors">
+                            <h3 class="text-xl font-bold text-white">Senat Mahasiswa (SMFT)</h3>
+                            <h4 class="text-md font-medium text-cyan-400 mb-4">Wakil Ketua Divisi Minat & Bakat</h4>
+                            <ul class="text-sm text-slate-400 space-y-2">
+                                <li>• Mengelola alat & sesi latihan rutin (futsal, basket, bulu tangkis).</li>
+                                <li>• Menyelenggarakan kompetisi (2 futsal, 1 bulu tangkis, 1 basket) untuk mahasiswa Teknik.</li>
+                                <li>• Terlibat aktif menyukseskan seluruh program kerja SMFT.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kerja -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="absolute w-5 h-5 bg-slate-900 border-4 border-slate-500 rounded-full -left-[11px] md:left-1/2 md:-ml-[10px] top-1"></div>
+                    <div class="md:flex items-center justify-between flex-row-reverse">
+                        <div class="md:w-5/12 mb-4 md:mb-0 md:pl-12">
+                            <span class="inline-block bg-slate-800 text-slate-300 border border-slate-700 px-4 py-1.5 rounded-full text-sm font-bold">Okt 2021 - Nov 2021</span>
+                        </div>
+                        <div class="hidden md:block md:w-2/12"></div>
+                        <div class="md:w-5/12 bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-lg hover:border-slate-500 transition-colors md:text-right">
+                            <h3 class="text-xl font-bold text-white">PT Ratah Timber (Mahakam Ulu)</h3>
+                            <h4 class="text-md font-medium text-slate-400 mb-4">Staf Penanaman & Pemeliharaan</h4>
+                            <ul class="text-sm text-slate-400 space-y-2">
+                                <li>• Bertanggung jawab melakukan penanaman di blok pasca panen kayu.</li>
+                                <li>• Melakukan pemeliharaan area tanam untuk memastikan pertumbuhan optimal.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian" class="py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                <i class="fas fa-tools text-cyan-500 mr-2"></i> Keahlian Teknis
+            </h2>
+            <p class="text-slate-400 mb-16">Berbagai teknologi dan konsep yang saya kuasai dan terus kembangkan.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+                
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all card-hover group">
+                    <div class="w-14 h-14 mx-auto bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/10 transition-colors">
+                        <i class="fas fa-code text-3xl text-cyan-400"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Web Dev</h4>
+                    <p class="text-xs text-slate-400 mt-2">HTML, CSS, JS</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all card-hover group">
+                    <div class="w-14 h-14 mx-auto bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/10 transition-colors">
+                        <i class="fab fa-python text-3xl text-cyan-400"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Backend</h4>
+                    <p class="text-xs text-slate-400 mt-2">Python, FastAPI</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all card-hover group">
+                    <div class="w-14 h-14 mx-auto bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/10 transition-colors">
+                        <i class="fas fa-database text-3xl text-cyan-400"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Database</h4>
+                    <p class="text-xs text-slate-400 mt-2">MySQL, SQLite</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all card-hover group">
+                    <div class="w-14 h-14 mx-auto bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/10 transition-colors">
+                        <i class="fas fa-project-diagram text-3xl text-cyan-400"></i>
+                    </div>
+                    <h4 class="font-bold text-white">System Analysis</h4>
+                    <p class="text-xs text-slate-400 mt-2">UML, ERD, Use Case</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all card-hover group col-span-2 md:col-span-1 mx-auto w-full max-w-[200px] md:max-w-none">
+                    <div class="w-14 h-14 mx-auto bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/10 transition-colors">
+                        <i class="fas fa-cloud text-3xl text-cyan-400"></i>
+                    </div>
+                    <h4 class="font-bold text-white">Tools & Cloud</h4>
+                    <p class="text-xs text-slate-400 mt-2">Git, AWS, GCP</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-500 py-10 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-white tracking-tight mb-6">Fatur<span class="text-cyan-500">.</span></h2>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="mailto:impungfaturrahman@gmail.com" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-cyan-600 hover:text-white transition-all"><i class="fas fa-envelope text-lg"></i></a>
+                <a href="https://www.linkedin.com/in/faturimpung" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-cyan-600 hover:text-white transition-all"><i class="fab fa-linkedin text-lg"></i></a>
+            </div>
+            <p class="text-sm">
+                &copy; 2026 Fatur Rahman Impung. Berdasarkan Data CV.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
